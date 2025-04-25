@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piyush Store - Minimal Design</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+        .header {
+            background-color: #232F3E;
+            color: white;
+            padding: 15px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .search-bar input {
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            width: 250px;
+        }
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+            border-radius: 4px;
+            transition: background 0.3s;
+        }
+        .nav-links a:hover {
+            background-color: rgb(248, 158, 79);
+        }
+        .main {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+        .product {
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .product:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        }
+        .product img {
+            max-width: 100%;
+            border-radius: 8px;
+        }
+        .price {
+            font-size: 18px;
+            font-weight: bold;
+            color: #232F3E;
+        }
+        .buy-button {
+            background: #232F3E;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        .buy-button:hover {
+            background: rgb(248, 158, 79);
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">Piyush Store</div>
+        <div class="search-bar">
+            <input type="text" placeholder="Search products">
+        </div>
+        <nav class="nav-links">
+            <a href="#">Sign In</a>
+            <a href="#">Orders</a>
+            <a href="#">Cart</a>
+        </nav>
+    </header>
+
+    <main class="main">
+        <section class="product">
+            <a href="https://www.amazon.in/Hero-Glamour-Blazing-Booking-Ex-Showroom/dp/B0D9DLDXNH">
+                <img src="/HTML/hero-glamour-xtec-new-model-bs6-bike-500x500.webp" alt="Hero Glamour Bike">
+            </a>
+            <h2>Bike</h2>
+            <p>Hero Glamour 125 (Drum) Bike Candy Blazing Red</p>
+            <p class="price">₹82,848</p>
+            <button class="buy-button">Buy Now</button>
+        </section>
+
+        <section class="product">
+            <a href="https://www.nykaaman.com/french-connection-silver-dial-analog-watch/p/8423741">
+                <img src="/HTML/OIP (1).jpeg" alt="French Connection Watch">
+            </a>
+            <h2>Watch</h2>
+            <p>French Connection Silver Dial Analog Watch</p>
+            <p class="price">₹2,000</p>
+            <button class="buy-button">Buy Now</button>
+        </section>
+
+        <section class="product">
+            <a href="https://www.amazon.in/Apple-iPhone-11-64GB-Black/dp/B07XVMJF2D">
+                <img src="/HTML/APPLE_APPLE-IPHONE-11--BLACK--128-GB-_6912.jpeg" alt="iPhone 11">
+            </a>
+            <h2>Mobile</h2>
+            <p>Apple iPhone 11 (64GB) - Black</p>
+            <p class="price">₹49,999</p>
+            <button class="buy-button">Buy Now</button>
+        </section>
+        <section class="product">
+            <a href="https://www.amazon.in/Sony-HT-S20R-Soundbar-Bluetooth-Connectivity/dp/B084685MT1/?_encoding=UTF8&pd_rd_w=h0s1f&content-id=amzn1.sym.014e5ed8-e6d5-42ab-9c4d-d603b06f8f5a&pf_rd_p=014e5ed8-e6d5-42ab-9c4d-d603b06f8f5a&pf_rd_r=6NKFHGCVTSTDKJ47VNH2&pd_rd_wg=rGuIK&pd_rd_r=60b37c5f-39ef-40dd-9067-1a857a1f3653&ref_=pd_hp_d_btf_ls_gwc_pc_en2_"><img src="/HTML/OIP (3).jpeg" alt="sound bar"></a>
+            <h2>Sound Bar</h2>
+            <p>Sony HT-S20R 5.1ch Dolby Audio Soundbar</p>
+            <p class="price">₹22,990</p>
+            <button class="buy-button">Buy Now</button>
+        </section>
+        <section class="product">
+            <a href="https://www.amazon.in/Noise-Wireless-Metallic-Playtime-Instacharge/dp/B0D4QLT8WG/ref=sr_1_2_sspa?crid=4CHQ7I7CHGH8&dib=eyJ2IjoiMSJ9.Qz5M9FQrF_OFXhhIwpsL_qzhMwfA6krr-CJilsfioqGHT-HpXqYvizyYKnz3OkTzy4cTJGAzn10ssSXDCyilE69gdtwV2jwrY_R9vviVFkDL2yj7pMCOyxUNJzU0e2zJhbOi415r_imCMUxcXC6UWMZuqoEwYk7iDNaHt6iCFrADV7U9aHfk4jk34DRn8A49FbJeJk6kndOQ7cA6csAIm33S88x4-Wyd4wKpfYx1bN8.NNoMDyBgVLz2skwEHWWOKux7bCeZEO6XLN7tQvvRP3k&dib_tag=se&keywords=bud&qid=1745517793&sprefix=bud%2Caps%2C310&sr=8-2-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&th=1"><img src="/HTML/OIP (4).jpeg" alt="buds"></a>
+            <h2>Wireless Buds</h2>
+            <p>Noise Buds VS102 Pro Wireless Earbuds</p>
+            <p class="price">₹1,499</p>
+            <button class="buy-button">Buy Now</button>
+        </section>
+        <br>
+        <section class="product">
+            <a href="https://www.amazon.in/TOYTONIC-2-4-Inch-Handheld-520-Portable/dp/B0DRSRVQ4C/?_encoding=UTF8&pd_rd_w=3CJuH&content-id=amzn1.sym.ac63fba8-5204-42a0-a75b-f9b376211320&pf_rd_p=ac63fba8-5204-42a0-a75b-f9b376211320&pf_rd_r=6NKFHGCVTSTDKJ47VNH2&pd_rd_wg=rGuIK&pd_rd_r=60b37c5f-39ef-40dd-9067-1a857a1f3653&ref_=pd_hp_d_btf_ls_gwc_pc_en2_"><img src="/HTML/8a14ef82-0bd0-4c6e-8821-ccdc31f9b857.jpg" alt="video game"></a>
+            <h2>Video Game</h2>
+            <p>TOYTONIC 2.4 Inch Handheld Video Game Console</p>
+            <p class="price">₹1,999</p>
+            <button class="buy-button">Buy Now</button>
+
+        </section>
+    </main>
+</body>
+</html>
